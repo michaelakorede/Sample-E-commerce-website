@@ -1,0 +1,130 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Colors */
+:root {
+    --primary-color: #3b5998;
+    --secondary-color: #f7c6c7;
+    --background-color: #f3f4f6;
+    --text-color: #333;
+    --button-color: #3b5998;
+    --button-text-color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Products Section */
+.products {
+    background-color: var(--background-color);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.product-card button {
+    padding: 8px 15px;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
